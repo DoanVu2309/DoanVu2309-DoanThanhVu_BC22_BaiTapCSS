@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #faf4f2;
+}
+
+.clear{
+    clear: both;
+}
+
+/* HEADER */
+.header{
+    /* mã màu hex: #rrggbb 0=> 1 */
+    background-color: #f8e1db;
+    /* padding: 20px; */
+    padding: 10px 30px;
+    /* padding: 10px 20px 30px 40px; */
+    /* top right bottom left */
+    /* padding-top: 10px;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    */
+} 
+
+.header .logo img{
+    width: 70px;
+}
+
+.header .navbar{
+    margin-top: 20px;
+}
+
+.header .navbar a{
+    color: #000000;
+    /* margin: 20px; */
+    /* thẻ inline chỉ được margin trái phải */
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color: #ff0000;
+}
+
+
+/* CAROUSEL */
+.carousel{
+    background-image: url(../img/BG.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+}
+
+
+/* ACTIVITY */
+.activity{
+    padding: 70px 0;
+}
+
+.activity .title{
+    /* tính kế thừa có thể được dùng nếu chưa được khai báo */
+    text-align: center;
+}
+
+.activity .main{
+    text-align: center;
+}
+
+.activity .title h1{
+    color: #8d8d8d;
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.activity .main .col{
+    float: left;
+    width: 25%;
+    padding: 0 15px;
+    /* border: 1px dashed #000000;
+    border: 1px dotted #000000;
+    border: 1px solid #000000; */
+    /* không cộng dồn kích thước */
+    box-sizing: border-box;
+}
+
+.activity .main .item{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.activity .main .item .thumbnail img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.activity .main .item h1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.activity .main .item p{
+    color: #8d8d8d;
+    line-height: 24px;
+}
+
+.activity .main .item a{
+    background-color: #e8e8e8;
+    color: #8d8d8d;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    /* ép kiểu */
+    /* inline-block lai giữa inline và block */
+    display: inline-block;
+    margin-top: 20px;
+}
+
+/* thẻ inline không chỉnh được kích thước, 
+không canh chỉnh được trái phải */
+
+.activity .main .btn-view-all{
+    color: #e76f51;
+    border: 1px solid #e76f51;
+    background-color: transparent;
+    width: 15%;
+    padding: 15px 40px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.activity .main .thumbnail{
+    position: relative;
+}
+
+.activity .main .thumbnail i{
+    color: #ff0000;
+    /* absolute, relative, fixed */
+    /* relative: lấy vị trí hiện tại làm chuẩn rồi di chuyển*/
+    /* absolute: di chuyển dựa vào lề của thẻ cha */
+    /* fixed: cố định tại 1 vị trí  */
+    position: absolute;
+    top: 20px;
+    /* left: 0; */
+    /* bottom: 0; */
+    right: 20px;
+    /* background-color: #ffffff; */
+    /* rgba(r,g,b,a), trong đó r,g,b: 0 => 255, a: 0 => 1*/
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.activity .item:hover,
+.activity .btn-view-all:hover{
+    background-color: #e76f51;
+    color: #ffffff;
+}
+
+/* CONTACT */
+.contact{
+    background-color: #f8e1db;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+.contact .contact-left{
+    background-image: url(../img/mask.png);
+    background-size: cover;
+    background-position: center;
+}
+.contact .contact-left{
+    float: left;
+    width: 45%;
+    padding: 20px 40px;
+}
+.contact .contact-right{
+    float: left;
+    width: 45%;
+    padding-top: 70px;
+}
+.contact-right h3{
+    color: #8d8d8d;
+    margin-bottom: 21px;
+}
+.contact-right h2{
+    color: #8d8d8d;
+}
+.contact-right p{
+    margin: 12px 0 30px;
+    color: #8d8d8d;
+}
+.contact-dowload,
+.contact-follow{
+    float: left;
+    width: 50%;
+}
+.contact .contact-follow i{
+    color: #e76f51;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+/* FOOTER */
+.footer{
+    background-color: #f8e1db;
+    border-radius: 100px 100px 0 0;
+    color: #3b3735;
+}
+.footer-top{
+    padding: 80px 60px;
+}
+.top-left{
+    width: 40%;
+    float: left;
+    line-height: 28px;
+}
+.top-right{
+    width: 58%;
+    padding-left: 20px;
+    float: left;
+}
+.footer-top h3{
+    margin-bottom: 20px;
+}
+.top-right .right-nav{
+    width: 33.33%;
+    float: left;
+}
+.top-right li{
+    list-style-type: none;
+    color: #706764;
+}
+.top-left p{
+    color: #706764;
+}
+.footer-bottom{
+    margin: 20px;
+    text-align: center;
+}
